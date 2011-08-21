@@ -40,16 +40,16 @@ class TestLargeNumberClass(unittest.TestCase):
         self.assertEqual(num3, LargeNumber("123454320"))
 
     def test_multiplication(self):
-        num1 = LargeNumber("1111111")
-        num2 = LargeNumber("2222222")
-        num3 = LargeNumber("2")
-        self.assertEqual(num1 * num3, num2)
+        num1 = LargeNumber("12345654321")
+        num2 = LargeNumber("12345")
+        num3 = LargeNumber("152407102592745")
+        self.assertEqual(num1 * num2, num3)
 
     def test_division(self):
-        num1 = LargeNumber("2222222")
-        num2 = LargeNumber("1111111")
-        num3 = LargeNumber("2")
-        self.assertEqual(num1 / num3, num2)
+        num1 = LargeNumber("5234567")
+        num2 = LargeNumber("8467")
+        num3 = LargeNumber("618")
+        self.assertEqual(num1 / num2, num3)
 
     def test_modulus(self):
         num1 = LargeNumber("2222222")
@@ -66,8 +66,8 @@ class TestLargeNumberClass(unittest.TestCase):
         num1 = LargeNumber("12345")
         num2 = LargeNumber("54321")
         num3 = LargeNumber.Random(num1, num2)
-        self.assertTrue(num3 >= num1)
-        self.assertTrue(num3 <= num2)
+        self.assertTrue(num3 > num1)
+        self.assertTrue(num3 < num2)
 
 if __name__ == "__main__":
     unittest.main()
