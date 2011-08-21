@@ -1,0 +1,7 @@
+LargeNumber class for Software Engineering final project
+written in python
+Stephen Olsen
+
+running is simple
+$ python test.py
+$ python primeTester.py
